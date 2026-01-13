@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorful HTML Table with Image</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      padding: 20px;
+    }
+
+    /* Scrolling heading container */
+    .scroll-container {
+      width: 100%;
+      overflow: hidden;
+      background-color: #3498db;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+
+    /* Scrolling heading text */
+    .scroll-text {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      white-space: nowrap;
+      animation: scroll-left 10s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      padding: 12px;
+      text-align: left;
+    }
+
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #eaf2f8;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scrolling Heading -->
+  <div class="scroll-container">
+    <div class="scroll-text">Student Information</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Photo</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="C:\Users\harik\OneDrive\Desktop\download.jpg" alt="Alice"></td>
+        <td>1</td>
+        <td>Alice</td>
+        <td>20</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td><img src="C:\Users\harik\OneDrive\Desktop\download.jpg" alt="Bob"></td>
+        <td>2</td>
+        <td>Bob</td>
+        <td>21</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td><img src="C:\Users\harik\OneDrive\Desktop\download.jpg" alt="Charlie"></td>
+        <td>3</td>
+        <td>Charlie</td>
+        <td>19</td>
+        <td>A</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
